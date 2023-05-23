@@ -1,0 +1,26 @@
+.product-list {
+  flex: 1;
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+.product-list img {
+  max-width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.content.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  .product-list {
+    width: 100%;
+  }
+}

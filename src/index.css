@@ -1,0 +1,49 @@
+/* Start Variables */
+:root {
+  --main-color: #fcb800;
+  --hover-main-color: #f3cb5f;
+  --main-padding: 30px;
+}
+/* End Variables */
+/* Start Global Rules  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #f6f9fc;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 20px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  pointer-events: unset !important;
+}

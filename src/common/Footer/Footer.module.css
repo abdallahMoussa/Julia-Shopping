@@ -1,0 +1,149 @@
+.footer {
+  background-color: rgb(15, 52, 96);
+  color: rgb(174, 180, 190);
+  padding: 70px 0;
+  padding-bottom: 50px;
+  font-size: 15px;
+}
+
+.footer .content {
+  display: grid;
+  grid-template-columns: 400px repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info img {
+  width: 120px;
+}
+.company-info p {
+  font-size: 15px;
+  padding: 5px 10px 5px 0;
+  word-wrap: break-word;
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.title {
+  margin-top: 10px;
+}
+.content h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+.links-box ul li a {
+  color: rgb(174, 180, 190);
+}
+
+.links-box ul li {
+  padding: 8px 0;
+}
+.links-box ul li a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.contact-us p {
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+.contact-us .media ul {
+  display: flex;
+}
+
+.contact-us .media ul li {
+  margin: 10px;
+}
+
+.contact-us .media ul li svg {
+  font-size: 20px;
+}
+
+.contact-us .media ul li svg:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .footer .content {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .footer .content {
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 20px;
+  }
+  .company-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .footer .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.my-info {
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.my-info h3 {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: serif;
+}
+.my-info span:first-of-type {
+  font-size: 25px;
+}
+.my-info .media {
+  margin-left: 10px;
+}
+.my-info .media ul {
+  display: flex;
+}
+.my-info .media ul li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.my-info .media ul li svg {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.my-info .media ul li svg:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .my-info {
+    justify-content: flex-start;
+  }
+  .my-info span:first-of-type {
+    font-size: 20px;
+  }
+  .my-info h3 {
+    font-size: 16px;
+  }
+  .my-info .media ul li svg {
+    font-size: 16px;
+  }
+}

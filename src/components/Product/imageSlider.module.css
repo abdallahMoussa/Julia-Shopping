@@ -1,0 +1,24 @@
+.swiper {
+  width: 270px;
+  height: 350px;
+  display: block;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid black;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #f6f9fc;
+}
+
+@media (max-width: 350px) {
+  .swiper {
+    width: 230px;
+  }
+}
