@@ -6,8 +6,8 @@ import Slider from "../Slider/Slider";
 
 function HeroSection() {
   return (
-    <div className={classes.slider}>
-      <div className={classes.banner}>
+    <div dir="" className={`${classes.slider} dark:bg-slate-900 `}>
+      <div className={`${classes.banner} dark:bg-slate-800`}>
         <Slider />
       </div>
       <div className={classes["right-side"]}>

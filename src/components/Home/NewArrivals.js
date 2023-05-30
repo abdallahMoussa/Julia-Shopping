@@ -37,13 +37,13 @@ function NewArrivals() {
   ];
 
   return (
-    <div className={classes["new-arrivals"]}>
+    <div className={`${classes["new-arrivals"]} bg-[#f6f9fc] dark:bg-slate-900 dark:text-white`}>
       <h2 className={classes.h2}>New Arrivals </h2>
       <div className={classes.content}>
-        <div className={classes.items}>
+        <div className={`${classes.items}  dark:bg-slate-900`}>
           {newArrivalsItems.map((item, index) => {
             return (
-              <div className={classes.item} key={index}>
+              <div className={`${classes.item} rounded bg-slate-200 dark:bg-slate-800`} key={index}>
                 <Link to={`/${item.id}`}>
                   <div className={classes.image}>
                     <img src={item.img} alt="" />

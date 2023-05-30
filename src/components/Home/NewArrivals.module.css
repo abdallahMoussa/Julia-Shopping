@@ -1,6 +1,5 @@
 .new-arrivals {
   padding: 10px var(--main-padding);
-  background: #f6f9fc;
   padding: 50px 0;
 }
 .h2 {
@@ -18,7 +17,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  background-color: #fff;
 }
 
 @media (max-width: 500px) {

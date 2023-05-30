@@ -68,7 +68,7 @@ function ProductItem(props) {
     <div
       className={`${classes["item"]} ${
         props.height ? `${classes.item} ${classes.homePage}` : ""
-      }`}
+      } bg-white overflow-hidden rounded-md`}
     >
       {showQuickView && <QuickView id={id} onClose={showQuickViewHandler} />}
 

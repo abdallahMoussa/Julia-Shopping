@@ -64,7 +64,7 @@ function App() {
   
   
   return (
-    <div >
+    <div className="dark:bg-slate-900" >
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

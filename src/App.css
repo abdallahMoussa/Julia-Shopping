@@ -11,6 +11,8 @@ body {
       rgba(251, 251, 251, 0.1) 100%
     ),
     linear-gradient(90deg, #84d2ff, #8d5acd) !important; */
+    margin-top: -30px;
+    /* padding-top: 30px; */
 }
 .img-slider {
   width: 100px;

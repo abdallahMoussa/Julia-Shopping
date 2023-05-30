@@ -5,7 +5,7 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  padding-top: 30px;
   padding: 0 var(--main-padding);
   margin-top: 105px;
 }

@@ -11,20 +11,20 @@ function InfiniteSlider() {
   ];
 
   return (
-    <div className={classes["infinity-slider"]}>
+    <div className={`${classes["infinity-slider"]} dark:bg-slate-900`}>
       <div className={classes["slider-container"]}>
         <div className={classes["inner-container"]}>
           {images.map((i, index) => {
             return (
               <div className={classes.content} key={index}>
-                <img alt={`${"infinity Slider"} ${index}`} src={i} />
+                <img alt={`${"infinity Slider"} ${index}`} src={i} className="dark:invert" />
               </div>
             );
           })}
           {images.map((i, index) => {
             return (
               <div className={classes.content} key={index}>
-                <img alt={`${"infinity Slider"} ${index}`} src={i} />
+                <img alt={`${"infinity Slider"} ${index}`} src={i}  className="dark:invert" />
               </div>
             );
           })}

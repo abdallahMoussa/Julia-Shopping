@@ -4,7 +4,7 @@ import classes from "./Banner.module.css";
 
 function Banner() {
   return (
-    <div className={classes.banner}>
+    <div className={`${classes.banner} dark:bg-slate-900`}>
       <div className={classes.content}>
         <NavLink
           to="/shop"

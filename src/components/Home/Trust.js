@@ -7,31 +7,31 @@ import { BiSupport } from "react-icons/bi";
 
 function Trust() {
   return (
-    <div className={classes.trust}>
+    <div className={`${classes.trust} dark:bg-slate-900 `}>
       <div className={classes.content}>
         <div className={classes["box-info"]}>
           <span>
             <TbTruckDelivery />
           </span>
-          <h4>Worldwide Delivery</h4>
+          <h4 className="dark:text-white">Worldwide Delivery</h4>
         </div>
         <div className={classes["box-info"]}>
           <span>
             <MdPayment />
           </span>
-          <h4>Safe Payment</h4>
+          <h4 className="dark:text-white">Safe Payment</h4>
         </div>
         <div className={classes["box-info"]}>
           <span>
             <VscWorkspaceTrusted />
           </span>
-          <h4>Shop With Confidence</h4>
+          <h4 className="dark:text-white">Shop With Confidence</h4>
         </div>
         <div className={classes["box-info"]}>
           <span>
             <BiSupport />
           </span>
-          <h4>24/7 Support</h4>
+          <h4 className="dark:text-white">24/7 Support</h4>
         </div>
       </div>
     </div>

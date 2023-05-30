@@ -147,8 +147,8 @@ function Discount() {
   };
 
   return (
-    <div className={classes.discount}>
-      <h2 className={classes.h2}>Big Discount </h2>
+    <div className={`${classes.discount} bg-[#f6f9fc] dark:bg-slate-900`}>
+      <h2 className={`${classes.h2} dark:text-white`}>Big Discount </h2>
       <div className={classes.wrapper}>
         <Swiper
           breakpoints={breakpoints}
