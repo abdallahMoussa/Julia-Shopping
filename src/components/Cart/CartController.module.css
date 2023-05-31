@@ -1,5 +1,5 @@
 .cart-controller {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .head {
   width: 90%;
@@ -13,12 +13,7 @@
   text-align: center;
   padding-left: 20px;
 }
-.head > div {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-}
+
 .back {
   padding-left: 20px;
   font-size: 17px;
@@ -31,13 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.item-length {
-  margin-left: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 300px;
 }
 
 .content {

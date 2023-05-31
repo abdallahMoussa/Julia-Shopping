@@ -66,9 +66,6 @@ function Footer() {
         <div className={classes["contact-us"]}>
           <h3 className={classes.title}>Contact Us</h3>
           <p>70 Washington Square South, New York, NY 10012, United States</p>
-          <p>
-            Email:<a href="/">mohamed.salah6486@gmail.com</a>
-          </p>
           <div className={classes.media}>
             <ul>
               <li>

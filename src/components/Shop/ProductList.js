@@ -22,7 +22,7 @@ function ProductList(props) {
   const orderedProducts = productList.slice(startIndex, finishIndex);
 
   return (
-    <div className={classes["product-list"]}>
+    <div className={`${classes["product-list"]} dark:text-white`}>
       <div
         className={`${classes["content"]} ${
           props.gridView ? "" : classes.list

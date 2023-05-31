@@ -68,7 +68,7 @@ function ProductDetails(props) {
 
   return (
     <div
-      className={`${classes["product-details"]} ${
+      className={`${classes["product-details"]} dark:text-white ${
         props.quickView && classes.quickView
       }`}
     >

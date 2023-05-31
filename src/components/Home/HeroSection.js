@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./HeroSection.module.css";
-import offImage1 from "../../assets/Home Page/promotion_1.jpeg";
-import offImage2 from "../../assets/Home Page/promotion_2.jpeg";
+import offImage1 from "../../assets/Home Page/promotion_1.png";
+import offImage2 from "../../assets/Home Page/promotion_2.png";
 import Slider from "../Slider/Slider";
 
 function HeroSection() {
@@ -11,8 +11,8 @@ function HeroSection() {
         <Slider />
       </div>
       <div className={classes["right-side"]}>
-        <img src={offImage1} alt="" />
-        <img src={offImage2} alt="" />
+        <img src={offImage1} alt="" className="h-[40vh] max-h-[250px]" />
+        <img src={offImage2} alt="" className="h-[40vh] max-h-[250px]"  />
       </div>
     </div>
   );

@@ -15,11 +15,12 @@
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f6f9fc;
+  margin: 0;
 }
 ul {
   list-style: none;

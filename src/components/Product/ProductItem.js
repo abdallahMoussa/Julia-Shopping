@@ -68,11 +68,11 @@ function ProductItem(props) {
     <div
       className={`${classes["item"]} ${
         props.height ? `${classes.item} ${classes.homePage}` : ""
-      } bg-white overflow-hidden rounded-md`}
+      } bg-white  overflow-hidden rounded-md`}
     >
       {showQuickView && <QuickView id={id} onClose={showQuickViewHandler} />}
-
       <span className={classes["right-items"]}>
+        
         <HiOutlineHeart
           onClick={addToWishList}
           className={existingInWishList ? classes.active : undefined}

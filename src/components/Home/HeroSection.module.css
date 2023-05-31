@@ -5,9 +5,7 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding: 0 var(--main-padding);
-  margin-top: 105px;
+  padding-top: 100px;
 }
 
 .slider img {
@@ -18,18 +16,6 @@
   position: relative;
 }
 
-.right-side {
-  padding-left: 30px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.right-side img {
-  height: 100%;
-}
-.right-side img:first-child {
-  margin-bottom: 30px;
-}
 
 .banner span {
   position: absolute;

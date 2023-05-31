@@ -89,7 +89,7 @@ function FilterBar(props) {
   }, [selectedRates]);
 
   return (
-    <div className={`${classes["filter-bar"]} ${showFilter && classes.active}`}>
+    <div className={`${classes["filter-bar"]} ${showFilter && classes.active} dark:bg-slate-600 dark:text-slate-200`}>
       <div onClick={props.changeFilterState} className={classes["close-icon"]}>
         <AiOutlineClose />
       </div>
@@ -161,11 +161,11 @@ function FilterBar(props) {
       </div>
       <div className={classes.rating}>
         <h3>Rating</h3>
-        <div className={classes["list"]}>
+        <div className={`${classes["list"]} `}>
           {Array.from({ length: 5 }).map((item, index) => {
             const rate = 5 - index;
             return (
-              <div key={index}>
+              <div key={index} className="flex">
                 <input
                   type="checkbox"
                   id={rate}

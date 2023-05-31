@@ -119,8 +119,8 @@ function Header() {
                 )}
               </Link>
             </li>
-            <li>
-              <AiOutlineUser className={classes.icon} />
+            <li className="w-10">
+              {/* <AiOutlineUser className={classes.icon} /> */}
             </li>
             <li>
               <ModeBtn classes="h-8 w-8" />

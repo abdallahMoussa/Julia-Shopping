@@ -20,18 +20,18 @@ function WishListController() {
   };
 
   return (
-    <div className={classes.controller}>
+    <div className={`${classes.controller} dark:text-white`}>
       <div className={classes.head}>
         <h3>Wish List </h3>
-        <div>
+        <div className="w-full flex justify-between">
           <div className={classes.back}>
             <Link to="/shop">
               <BsArrowLeft />
               <span>Back To Shop</span>
             </Link>
           </div>
-          <div className={classes["item-length"]}>
-            <span>{wishListLength} Items</span>
+          <div className={`${classes["item-length"]} `}>
+            {wishListLength? <span>{wishListLength} Items</span>:null}
             <button
               onClick={clearWhishListItems}
               className={`${classes["clear-wish-list-btn"]} ${
@@ -45,8 +45,8 @@ function WishListController() {
       </div>
       <div className={classes.content}>
         {wishListLength === 0 ? (
-          <div style={{ maxWidth: "500px" }}>
-            <h3 style={{ fontWeight: "500" }}>Wish List Is Empty</h3>
+          <div style={{ maxWidth: "500px" }} className="m-auto">
+            <h3 style={{ fontWeight: "500" }} className="w-full text-center">Wish List Is Empty</h3>
             <img
               style={{ maxWidth: "100%" }}
               // src="https://static.oxinis.com/healthmug/image/healthmug/empty-wishlist.webp"

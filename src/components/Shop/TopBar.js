@@ -19,7 +19,7 @@ function TopBar(props) {
   };
 
   return (
-    <div className={classes["top-bar"]}>
+    <div className={`${classes["top-bar"]} dark:bg-slate-600 dark:text-white`} >
       <div className={classes.content}>
         <div className={classes.query}>
           {filterItem !== "all" ? (
@@ -31,7 +31,7 @@ function TopBar(props) {
         </div>
         <div className={classes.sort}>
           <span>Sort by: </span>
-          <select onChange={changeSortingHandler} name="sort" id="sort-price">
+          <select onChange={changeSortingHandler} name="sort" className="dark:bg-slate-700" id="sort-price">
             <option name="sort" value="none">
               None
             </option>
@@ -43,11 +43,11 @@ function TopBar(props) {
             </option>
           </select>
         </div>
-        <div className={classes.view}>
-          <button onClick={() => changeViewHandler("grid")}>
+        <div className={`${classes.view}`}>
+          <button className="dark:bg-slate-700" onClick={() => changeViewHandler("grid")}>
             <HiOutlineViewGrid />
           </button>
-          <button onClick={() => changeViewHandler("list")}>
+          <button className="dark:bg-slate-700" onClick={() => changeViewHandler("list")}>
             <BsList />
           </button>
           <button

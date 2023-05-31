@@ -23,10 +23,10 @@ function CartController() {
 
   // price={item.totalPrice}
   return (
-    <div className={classes["cart-controller"]}>
+    <div className={`${classes["cart-controller"]} dark:text-white`}>
       <div className={classes.head}>
         <h3>Shopping Cart</h3>
-        <div>
+        <div className="flex w-full justify-between">
           <div className={classes.back}>
             <Link to="/shop">
               <BsArrowLeft />
@@ -34,7 +34,7 @@ function CartController() {
             </Link>
           </div>
           <div className={classes["item-length"]}>
-            <span>{cartItemLength} Items</span>
+            {cartItemLength ? <span>{cartItemLength} Items</span> : null}
             <button
               onClick={ClearCartItems}
               className={`${classes["clear-cart-btn"]} ${
@@ -49,11 +49,12 @@ function CartController() {
       <div className={classes.content}>
         {cartItemLength === 0 ? (
           <div style={{ flex: "1" }}>
-            <h3 style={{ fontWeight: "500" }}>Your Cart Is Empty</h3>
+            <h3 style={{ fontWeight: "500" }} className="w-full text-center">Your Cart Is Empty</h3>
             <img
               style={{ maxWidth: "100%" }}
               src="empty-cart.png"
               alt=""
+              className="m-auto"
             />
           </div>
         ) : undefined}
@@ -74,7 +75,7 @@ function CartController() {
           </div>
         ) : undefined}
 
-        <PaymentInfo />
+        {cartItemLength ? <PaymentInfo /> : null}
       </div>
     </div>
   );
