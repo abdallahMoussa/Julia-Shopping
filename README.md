@@ -16,4 +16,4 @@
 
 - authentication => local storage javascript 
 
-# LIVE DEMO : https://julia-shopping.vercel.app/
+# DEMO : [Julia](https://julia-shopping.vercel.app)
